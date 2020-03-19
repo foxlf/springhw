@@ -11,7 +11,7 @@ public class App {
         // Считываем бин (объект)
         HelloBean hb = ctx.getBean("firstBean", HelloBean.class);
         // Печатаем объект в консоль
-        System.out.println(hb);
+        Printer.printMyFile(hb);
         // Закрываем контекст приложения 
         ctx.close();
 	}
